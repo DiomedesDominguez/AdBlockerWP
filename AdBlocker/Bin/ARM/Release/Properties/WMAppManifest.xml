@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{86cc429d-5d86-455a-8862-27050bd8def1}" Title="AdBlocker" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="URGERO.ORG" Description="AdBlocker For Windows" SDOptOut="false" BackUpOptOut="false" Publisher="AdBlocker" PublisherID="{c404157f-be32-4ac1-a9d9-5d800494333e}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_INTEROPSERVICES" />
+      <Capability Name="ID_CAP_DEVICE_MANAGEMENT_SECURITY_POLICIES" />
+      <Capability Name="ID_CAP_DEVICE_MANAGEMENT_ADMIN" />
+      <Capability Name="ID_CAP_OEM_DEPLOYMENT" />
+      <Capability Name="ID_CAP_CSP_FOUNDATION" />
+      <Capability Name="ID_CAP_CSP_OEM" />
+      <Capability Name="ID_CAP_CSP_W4_APPLICATION" />
+      <Capability Name="ID_CAP_INTERNET_EXPLORER_SEARCH_PROVIDER_KEYS_HKCU" />
+      <Capability Name="ID_CAP_REMOVABLE_STORAGE" />
+      <Capability Name="ID_CAP_OEMPUBLICDIRECTORY" />
+      <Capability Name="ID_CAP_RUNTIME_CONFIG" />
+      <Capability Name="ID_CAP_APPOINTMENTS" />
+      <Capability Name="ID_CAP_CONTACTS" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="AdBlockerToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <Title>AdBlocker</Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge></HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ActivatableClasses>
+      <InProcessServer>
+        <Path>Nokia.SilentInstaller.Runtime.dll</Path>
+        <ActivatableClass ActivatableClassId="Nokia.SilentInstaller.Runtime.AppData" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Nokia.SilentInstaller.Runtime.CEtwLogging" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Nokia.SilentInstaller.Runtime.RPCManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Nokia.SilentInstaller.Runtime.CSilentInstallerRuntime" ThreadingModel="both" />
+      </InProcessServer>
+    </ActivatableClasses>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.1.15116 -->
